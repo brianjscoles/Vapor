@@ -23,11 +23,11 @@
 @postmetaColor: #95a5a6;
 @gistBackgroundColor: #fdfdfd;
 
-@maxPageWidth: 600px;
+@maxPageWidth: 900px;
 
 // Styles
 
-/* === Core Styles === */
+/* === The Core Styles === */
 
 body {
     background-color: @bodyBackgroundColor;
@@ -152,7 +152,7 @@ h1.blog-title {
     font-size: 48px;
     line-height: 52px;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     padding: 0;
 }
 
@@ -163,6 +163,28 @@ h2.blog-description {
     padding: .5em 1em;
     line-height: 1.2em;
 }
+
+div.header-icon-bar {
+    width: 105px;
+    margin: auto;
+}
+
+a.header-icon {
+    height: 20px;
+    width: 20px;
+    padding: 6px 3px 0 3px;
+    margin: 3px;
+    background-color: #7f8c8d;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+}
+
+a.header-icon:hover {
+    color: @linkColor;
+    background-color: #A3ACAD;
+}
+
 
 section.footer-description {
     margin-bottom: 1em;
@@ -283,7 +305,7 @@ h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-tit
 
 h2 {
     font-family: @secondaryFontFamily;
-    margin-top: 2em;
+    margin-top: 0.5em;
     text-transform: uppercase;
     font-weight: 300;
 }

@@ -1,6 +1,6 @@
 @import url('//fonts.googleapis.com/css?subset=latin,cyrillic-ext,latin-ext,cyrillic&family=Open+Sans+Condensed:300|Open+Sans:400,600,400italic,600italic|Merriweather:400,300,300italic,400italic,700,700italic|Roboto+Slab:400,300');
 @import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
-/* === Core Styles === */
+/* === The Core Styles === */
 body {
   background-color: #ffffff;
   color: #7f8c8d;
@@ -86,7 +86,7 @@ article.preview,
 a.archive-link,
 .article-nav {
   margin: 20px auto;
-  max-width: 600px;
+  max-width: 900px;
   width: 90%;
 }
 #site-head img {
@@ -112,7 +112,6 @@ article.preview p.readmore {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  -webkit-background-size: cover !important;
   background-size: cover !important;
   background-position: center center !important;
   background-color: #ffffff;
@@ -125,7 +124,7 @@ h1.blog-title {
   font-size: 48px;
   line-height: 52px;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   padding: 0;
 }
 h2.blog-description {
@@ -134,6 +133,24 @@ h2.blog-description {
   margin-bottom: 2em;
   padding: .5em 1em;
   line-height: 1.2em;
+}
+div.header-icon-bar {
+  width: 105px;
+  margin: auto;
+}
+a.header-icon {
+  height: 20px;
+  width: 20px;
+  padding: 6px 3px 0 3px;
+  margin: 3px;
+  background-color: #7f8c8d;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+}
+a.header-icon:hover {
+  color: #3498db;
+  background-color: #A3ACAD;
 }
 section.footer-description {
   margin-bottom: 1em;
@@ -224,7 +241,6 @@ div.authorimage {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  -webkit-background-size: cover !important;
   background-size: cover !important;
   background-position: center center !important;
   margin-right: 10px;
@@ -245,7 +261,7 @@ h1.blog-title a:hover {
 }
 h2 {
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
-  margin-top: 2em;
+  margin-top: 0.5em;
   text-transform: uppercase;
   font-weight: 300;
 }
@@ -296,7 +312,7 @@ nav {
   margin-bottom: 2em;
   text-align: center;
   margin: 20px auto 2em auto;
-  max-width: 600px;
+  max-width: 900px;
 }
 nav ul {
   list-style: none;

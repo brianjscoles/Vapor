@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" type="text/css" href="{{asset "css/normalize.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     {{#if pagination.next}}<link href="{{page_url pagination.next}}" rel="prefetch" />{{/if}}
 
@@ -23,7 +24,12 @@
     <header id="site-head">
         {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><div class="bloglogo" style="background: url({{@blog.logo}})"></div></a>{{/if}}
         <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
-        {{> header-description}}
+        <div class='header-icon-bar'>
+            <a class="header-icon fa fa-lg fa-linkedin" href="http://linkedin.com/in/brianscoles"></a>
+            <a class="header-icon fa fa-lg fa-github" href="http://github.com/brianjscoles"></a>
+            <a class="header-icon fa fa-lg fa-facebook" href="http://facebook.com/brianscoles"></a>
+        </div>
+        {{> header-description }} 
         {{!> menu}}
     </header>
 
